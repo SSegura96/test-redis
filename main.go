@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/go-redis/redis/v8"
+
+	"github.com/golang/mock/gomock"
 )
 
 func main() {
-	var redisClient redis.UniversalClient
-	_ = redisClient
+	ctrl := gomock.NewController(nil)
+	_ = ctrl
 	fmt.Println("HW")
 }
